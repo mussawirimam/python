@@ -32,3 +32,18 @@ if result:
 else:
     print("Running the program again...")
     # You can add logic here to rerun the program if needed
+
+
+
+---------------------------------
+#this is seperate program to show, you can do the same thing as above in simpler way. 
+def check_capitalization(x):
+    return x == x.capitalize()  # Check if input is already capitalized
+
+while True:  # Keep running until the input is capitalized
+    x = input("What is your name? ")
+    if check_capitalization(x):
+        print("It is true (input is already capitalized).")
+        break  # Exit the loop if input is capitalized
+    else:
+        print("Input is not capitalized. Running the program again...")
