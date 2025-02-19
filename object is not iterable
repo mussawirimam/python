@@ -1,0 +1,45 @@
+"""
+commented code below is to learn what is iterable and what is not iterable. Find the difference between the two.
+def thisisstring(string):
+    #print("This is my input function")
+    x = string
+    return x
+## now I will create function that will the input for the above function 
+def print_string_input():
+    user_input = input("Enter a string:")
+    result = thisisstring(user_input)
+    print(result)
+### this is how we will call the function below:
+print_string_input()
+
+for x in print_string_input:
+    print(x)
+
+
+#    for x in print_string_input: 
+#TypeError: 'function' object is not iterable
+The error you're seeing, TypeError: 'function' object is not iterable, occurs because you are trying to iterate over a function (print_string_input), which is not allowed. In Python, you can only iterate over iterable objects such as lists, tuples, dictionaries, strings, etc.
+
+If your intention is to iterate over the result returned by thisisstring, you need to modify the code slightly. Here's how to fix it:
+
+"""
+def thisisstring(string):
+    # Return the input string
+    x = string
+    return x
+
+def print_string_input():
+    # Ask the user for input
+    user_input = input("Enter a string: ")
+    
+    # Call the thisisstring function and return the result
+    return thisisstring(user_input)
+
+# Call the function and store the result
+result = print_string_input()
+
+# Iterate over the result if it's a string and print each character
+for x in result:
+    print(x.capitalize())
+
+### variable is a way of packing data into a single entity.
