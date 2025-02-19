@@ -1,4 +1,5 @@
 # what is iterable and iterator
+# https://www.w3schools.com/python/python_iterators.asp
 # Iterable: It's like a container (e.g., a list or a string) that holds many items and can be looped through. Think of it as a box of chocolates where you can take one chocolate at a time.
 #Iterator: It's a tool that helps you go through the items in an iterable, one by one. Once you've gone through everything, it stops. It’s like using a tool to take each chocolate from the box, one by one, until the box is empty.
 #The iterable is the container, and the iterator is the tool that helps you take out the items from that container.
