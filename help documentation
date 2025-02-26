@@ -1,0 +1,5 @@
+# import kubernetes.client
+# help(kubernetes.client.CoreV1Api)
+# from kubernetes import client
+# print(dir(client.CoreV1Api))
+# print(client.CoreV1Api.list_pod_for_all_namespaces.__doc__)
