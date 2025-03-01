@@ -1,4 +1,21 @@
 astroName = input("What is the full name of the astronaut")
+
 upper_letters = astroName.upper()
 removeSpaces = upper_letters.replace(" ", "_")
-print(f"this is the fullname of the astro guy {removeSpaces}")
+addingTag = "ASTRONAUT_" + removeSpaces
+
+print(f"this is the fullname of the astro guy {astroName}")
+print(f"this is the fullname of the astro guy {addingTag}")
+
+
+# Prompt user for input
+full_name = input("Enter astronaut's full name: ")
+
+# Process the name
+uppercase_name = full_name.upper()
+underscored_name = uppercase_name.replace(" ", "_")
+name_tag = "ASTRONAUT_" + underscored_name
+
+# Print results
+print(f"Original name: {full_name}")
+print(f"Processed name tag: {name_tag}")
