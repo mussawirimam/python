@@ -29,3 +29,22 @@ Age: 25
 Height: 1.75 meters
 >>> print(type(height_float))
 <class 'float'>
+
+
+>>> # Converting to boolean
+>>> print(bool(1))     # Non-zero numbers are True
+True
+>>> print(bool(0))     # Zero is False
+False
+>>> print(bool(""))    # Empty string is False
+False
+>>> print(bool("Hello"))  # Non-empty string is True
+True
+
+>>> # Converting boolean to integer
+>>> true_int = int(True)
+>>> false_int = int(False)
+>>> print(f"True as integer: {true_int}")
+True as integer: 1
+>>> print(f"False as integer: {false_int}")
+False as integer: 0
