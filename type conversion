@@ -1,0 +1,31 @@
+>>> # Converting string to integer
+>>> age_str = "25"
+>>> age_int = int(age_str)
+>>> print(f"Age: {age_int}")
+Age: 25
+>>> print(type(age_int))
+<class 'int'>
+
+>>> # Converting string to float
+>>> height_str = "1.75"
+>>> height_float = float(height_str)
+>>> print(f"Height: {height_float} meters")
+Height: 1.75 meters
+>>> print(type(height_float))
+<class 'float'>
+
+>>> # Converting string to integer
+>>> age_str = "25"
+>>> age_int = int(age_str)
+>>> print(f"Age: {age_int}")
+Age: 25
+>>> print(type(age_int))
+<class 'int'>
+
+>>> # Converting string to float
+>>> height_str = "1.75"
+>>> height_float = float(height_str)
+>>> print(f"Height: {height_float} meters")
+Height: 1.75 meters
+>>> print(type(height_float))
+<class 'float'>
