@@ -1,0 +1,37 @@
+
+>>> is_student = True
+>>> is_employed = False
+>>> print(f"Is a student: {is_student}")
+Is a student: True
+>>> print(f"Is employed: {is_employed}")
+Is employed: False
+>>> type(is_student)
+<class 'bool'>
+
+
+>>> a = True
+>>> b = False
+>>> print(a and b)  # True if both are True
+False
+>>> print(a or b)   # True if at least one is True
+True
+>>> print(not a)    # Negation
+False
+
+
+
+
+>>> x = 5
+>>> y = 10
+>>> print(x < y)   # Less than
+True
+>>> print(x > y)   # Greater than
+False
+>>> print(x == y)  # Equal to
+False
+>>> print(x != y)  # Not equal to
+True
+>>> print(x <= y)  # Less than or equal to
+True
+>>> print(x >= y)  # Greater than or equal to
+False
