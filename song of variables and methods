@@ -1,0 +1,4 @@
+astroName = input("What is the full name of the astronaut")
+upper_letters = astroName.upper()
+removeSpaces = upper_letters.replace(" ", "_")
+print(f"this is the fullname of the astro guy {removeSpaces}")
