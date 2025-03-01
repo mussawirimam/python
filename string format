@@ -1,0 +1,9 @@
+formatting
+>>> is_student = True
+>>> is_employed = False
+>>> print(f"Is a student: {is_student}")
+Is a student: True
+>>> print(f"Is employed: {is_employed}")
+Is employed: False
+>>> type(is_student)
+<class 'bool'>
