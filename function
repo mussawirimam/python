@@ -1,0 +1,24 @@
+### all these function should needs to be put into seperate files
+def calculate_area(lenght, width):
+    return lenght * width
+
+area = calculate_area(5, 3)
+print(f"The area is: {area}")
+
+def greet(name):
+    return f"hello, {name}!"
+
+result = greet("Alice")
+print(result)
+
+
+def greet(name, age):
+    name = input("enter your name: ")
+    age = input("enter your age: ")
+    print(age, name)
+#   return f"hello, your name is {name}, your age is {age}"
+    
+greet("name", "age")
+#greet("name", "age")
+#print(greet("name", "age"))
+
