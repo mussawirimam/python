@@ -1,0 +1,50 @@
+In this step, you will learn about function scope and how variables behave inside and outside functions.
+
+In the Python interpreter, let's explore local and global variables:
+
+>>> x = 10  # Global variable
+
+>>> def print_x():
+...     print(f"Global x: {x}")
+...
+>>> print_x()
+Global x: 10
+
+>>> def change_x():
+...     x = 20  # Local variable
+...     print(f"Local x: {x}")
+...
+>>> change_x()
+Local x: 20
+>>> print(f"Global x after change_x(): {x}")
+Global x after change_x(): 10
+Notice that the change_x() function creates a new local variable x, which doesn't affect the global x.
+
+
+
+To modify a global variable inside a function, use the global keyword:
+>>> def modify_global_x():
+...     global x
+...     x = 30
+...     print(f"Modified global x: {x}")
+...
+>>> modify_global_x()
+Modified global x: 30
+>>> print(f"Global x after modify_global_x(): {x}")
+Global x after modify_global_x(): 30  
+Now the global x has been modified.
+
+
+
+
+Functions can also access variables from their enclosing scope:
+>>> def outer_function(x):
+...     def inner_function():
+...         print(f"x from outer function: {x}")
+...     inner_function()
+...
+>>> outer_function(40)
+x from outer function: 40
+The inner function can access the x parameter of the outer function.
+
+Understanding function scope is crucial for writing clean and bug-free code. It helps prevent unintended side effects and makes your functions more predictable.
