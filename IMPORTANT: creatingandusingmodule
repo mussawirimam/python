@@ -1,0 +1,47 @@
+This module contains four basic mathematical operations and a constant PI.
+
+touch ~/project/math_operations.py
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply():
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero"
+
+PI = 3.14159
+
+Now, create another file named use_math_module.py in the same directory:
+touch ~/project/use_math_module.py
+Open use_math_module.py in the IDE editor and add the following content:
+
+# use_math_module.py
+
+import math_operations
+
+result_add = math_operations.add(5, 3)
+result_subtract = math_operations.subtract(10, 4)
+result_multiply = math_operations.multiply(2, 6)
+result_divide = math_operations.divide(15, 3)
+
+print(f"Addition: {result_add}")
+print(f"Subtraction: {result_subtract}")
+print(f"Multiplication: {result_multiply}")
+print(f"Division: {result_divide}")
+print(f"Value of PI: {math_operations.PI}")
+
+This script imports the math_operations module and uses its functions and constant.
+python ~/project/use_math_module.py
+You should see output similar to this:              
+Addition: 8
+Subtraction: 6
+Multiplication: 12
+Division: 5.0
+Value of PI: 3.14159              
