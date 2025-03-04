@@ -1,0 +1,20 @@
+By creating a package, you've organized related modules into a directory hierarchy, 
+making it easier to manage and import related functionality in your projects.
+
+  labex:geometry/ $ mkdir ~/project/geometryclearmkdir ~/project/geometry
+labex:geometry/ $ 
+labex:geometry/ $ 
+labex:geometry/ $ mkdir ~/project/geometry
+labex:geometry/ $ touch ~/project/geometry/__init__.py
+touch ~/project/geometry/shapes.py
+labex:geometry/ $ cd ..
+labex:project/ $ ls
+advanced_math.py  geometry  use_advanced_math.py
+labex:project/ $ python use_advanced_math.py 
+Square root of 16: 4.0
+16 to the power of 2: 256.0
+Sine of 30 degrees: 0.49999999999999994
+Cosine of 30 degrees: 0.8660254037844387
+labex:project/ $ 
+
+
