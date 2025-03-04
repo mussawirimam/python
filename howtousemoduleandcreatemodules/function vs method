@@ -2,3 +2,18 @@ os is the module
 os.list dir is the function provided by the os module.
 	In python, functions defined at the module level (like those in os) are simply called functions rather than methods. 
 Methods are typically functions that belong to a class or instance.
+
+
+Q: does function and method works the same way ?
+Functions and methods are both callable blocks of code, but they differ mainly in how they're associated with objects:
+
+Functions:
+Defined at the module level, they're standalone and not inherently tied to any object. 
+They work the same way regardless of where they are called.
+
+Methods:
+Defined inside a class, they are functions that are bound to an instance or the class itself.
+When you call a method, the instance (or class) is automatically passed as the first argument
+(commonly named self for instances or cls for class methods).
+
+So while they operate similarly (both execute code when called), methods have additional context (the object or class) that functions don't.
