@@ -1,0 +1,4 @@
+os is the module
+os.list dir is the function provided by the os module.
+	In python, functions defined at the module level (like those in os) are simply called functions rather than methods. 
+Methods are typically functions that belong to a class or instance.
