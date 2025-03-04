@@ -1,0 +1,30 @@
+1. Module:
+A module is a single Python file (.py) that contains Python code such as functions, classes, variables, and runnable code.
+You can import a module into other scripts or modules using the import statement.
+Modules are used to organize code and reuse functionality across different programs.
+
+Example:
+python
+Copy
+# module: math_utils.py
+def add(a, b):
+    return a + b
+
+python
+Copy
+# main.py
+import math_utils
+
+result = math_utils.add(2, 3)
+
+2. Package:
+A package is a collection of modules organized into directories, typically with an __init__.py file (even if it’s empty)
+to indicate that the directory should be treated as a package.
+Packages allow you to organize multiple related modules together under a common namespace.
+A package can also contain sub-packages (directories) and modules (files).
+
+Example:
+my_package/
+├── __init__.py
+├── module1.py
+├── module2.py
