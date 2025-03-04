@@ -1,3 +1,5 @@
+## modules in Python can contain classes, along with functions, variables, and other objects.
+
 os is the module
 os.list dir is the function provided by the os module.
 	In python, functions defined at the module level (like those in os) are simply called functions rather than methods. 
