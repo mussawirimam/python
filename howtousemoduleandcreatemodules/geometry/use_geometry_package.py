@@ -1,5 +1,5 @@
 # file03 use_geometry_package.py
-
+# in this file we are adding the arguments for the parameters we have set in the shapes.py file
 from geometry.shapes import circle_area, rectangle_area, triangle_area
 
 radius = 5
