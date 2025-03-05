@@ -29,3 +29,5 @@ One example of a built-in function is len(), which returns the length of an obje
 
 e.g of both function and class which has its own methods
 range is both class and a builtin fuction
+
+Q: why we create classes when we can create function to serve the same purpose?
