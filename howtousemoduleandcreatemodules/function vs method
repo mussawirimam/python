@@ -31,3 +31,87 @@ e.g of both function and class which has its own methods
 range is both class and a builtin fuction
 
 Q: why we create classes when we can create function to serve the same purpose?
+
+FUNCTION EXAMPLE:
+def add(x, y):
+    # Define a function called 'add' that takes two parameters, 'x' and 'y'.
+    # These parameters represent the numbers that will be added together.
+    
+    return x + y  # Return the result of adding 'x' and 'y'
+    
+# Example usage:
+result = add(3, 5)  # Call the 'add' function with arguments 3 and 5.
+# The function adds 3 and 5 and returns the result, which is 8.
+# This result is stored in the variable 'result'.
+
+print(result)  # Output the result. The output will be 8.
+
+
+Explanation:
+def add(x, y):: Defines a function named add that takes two parameters: x and y.
+return x + y: Returns the sum of the two arguments passed to the function (x and y).
+result = add(3, 5): Calls the function with 3 and 5 as arguments, which are passed to x and y. The result (8) is stored in the variable result.
+print(result): Prints the result, which is 8.
+
+
+METHOD EXAMPLE FROM CLASS:
+# Define a class named 'Adder'
+class Adder:
+    # The __init__ method is the constructor of the class. It is called when an instance of the class is created.
+    # It takes 'self' as its first parameter (representing the instance of the class) and two other parameters 'x' and 'y'.
+    def __init__(self, x, y):
+        # The values of 'x' and 'y' are stored as instance attributes (self.x and self.y).
+        # 'self.x' and 'self.y' are now accessible throughout the instance of this class.
+        self.x = x
+        self.y = y
+
+    # This method adds 'self.x' and 'self.y', the two numbers stored in the instance attributes.
+    def add(self):
+        # Perform the addition and return the result
+        return self.x + self.y
+
+# Example usage of the Adder class:
+# Create an instance of the Adder class, passing 3 and 5 as arguments.
+adder_instance = Adder(3, 5)  # 'x' becomes 3, and 'y' becomes 5 in this instance.
+
+# Call the 'add' method of the 'adder_instance' to perform the addition.
+result = adder_instance.add()  # This will return 8 (3 + 5) and store it in the 'result' variable.
+
+# Output the result
+print(result)  # Output will be 8.
+
+
+
+Explanation:
+class Adder:
+
+This defines a class named Adder. A class is like a blueprint for creating objects (or instances).
+def __init__(self, x, y):
+
+The __init__ method is a special constructor method that initializes the object's attributes. It is automatically called when you create a new instance of the class.
+self: Refers to the instance of the class.
+x and y: Are parameters that are passed to the instance when it is created.
+self.x = x and self.y = y:
+
+These store the passed values (x and y) as attributes of the class instance. Now the object has its own x and y values, which can be accessed by any method in the class.
+def add(self):
+
+This defines a method add() inside the class that will add the two numbers stored in self.x and self.y.
+return self.x + self.y:
+
+This adds the two stored values (self.x and self.y) and returns the result.
+adder_instance = Adder(3, 5)
+
+This creates an instance of the Adder class, passing 3 and 5 as the values of x and y. This calls the __init__ method and initializes the instance attributes (self.x = 3, self.y = 5).
+result = adder_instance.add()
+
+Calls the add() method on the adder_instance, which adds the values stored in self.x and self.y (3 + 5), and stores the result (8) in the variable result.
+print(result)
+
+This prints the result, which is 8.
+
+
+
+Key Differences Between the Class Example and Function:
+State Management: The class allows you to store values (x and y) as attributes, which can be accessed and used by methods. A function, on the other hand, would require arguments every time it's called.
+Reusability: With a class, you can create multiple instances (objects), each with its own state (values of x and y), while functions are typically stateless.
