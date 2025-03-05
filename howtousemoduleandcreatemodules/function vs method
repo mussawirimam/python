@@ -19,3 +19,13 @@ When you call a method, the instance (or class) is automatically passed as the f
 (commonly named self for instances or cls for class methods).
 
 So while they operate similarly (both execute code when called), methods have additional context (the object or class) that functions don't.
+
+
+e.g of Method:
+list [] is the class which has the method called append()
+
+e.g of function:
+One example of a built-in function is len(), which returns the length of an object.
+
+e.g of both function and class which has its own methods
+range is both class and a builtin fuction
