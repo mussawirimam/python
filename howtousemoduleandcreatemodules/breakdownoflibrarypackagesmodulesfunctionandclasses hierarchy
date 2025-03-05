@@ -1,0 +1,26 @@
+Library:
+A library is a collection of modules and/or packages that provide reusable code.
+(Not all libraries are organized into packages, but many are.)
+
+Packages:
+Packages are directories containing a collection of modules (and possibly subpackages). They help organize related modules.
+
+Modules:
+Modules are single files (typically with a .py extension) that contain Python code, such as functions, classes, and variables.
+
+Functions:
+Functions are blocks of code that perform a specific task.
+
+They are defined with parameters (placeholders) and are called with arguments (actual values).
+Classes:
+Classes are blueprints for creating objects.
+
+They have attributes (data) and methods (functions defined inside a class).
+The class's constructor method (typically __init__) can accept parameters to initialize the object, but the class itself is not described as having parameters.
+So, a more precise breakdown would be:
+
+A library can have packages.
+Packages contain modules.
+Modules include functions and classes.
+Functions have parameters (in their definition) and receive arguments when called.
+Classes have attributes (and methods), and their constructor methods can take parameters to initialize new objects.
