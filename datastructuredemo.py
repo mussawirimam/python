@@ -1,6 +1,6 @@
 #touch ~/project/contact_manager.py
 def add_contact(contacts, name, phone, email):
-    contacts[name] = {"phone": phone, "email": email}
+    contacts[name] = {"phone": phone, "email": email} ### I dont understand that contacts is a variable then what is [name]
     print(f"Contact {name} added successfully.")
 
 def remove_contact(contacts, name):
