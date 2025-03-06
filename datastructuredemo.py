@@ -171,3 +171,21 @@ Contact Manager
 6. Exit
 Enter your choice (1-6): 6
 Thank you for using Contact Manager. Goodbye!
+
+
+
+############# important to breaking the code down
+def add_contact(contacts, name, phone, email):
+    # Add the contact details into the contacts dictionary using 'name' as the key
+    contacts[name] = {"phone": phone, "email": email}
+    print(f"Contact {name} added successfully.")
+
+# Create an empty dictionary for contacts
+contacts = {}
+
+# Call the function with the correct types: the first argument is a dictionary.
+add_contact(contacts, "jj", "2", "33")
+
+# Print the contacts dictionary to see the stored data
+print(contacts)
+
