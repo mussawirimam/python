@@ -1,0 +1,5 @@
+list can contain multiple objects and is mutable meaning they can be changed
+tuples are immutable meaning they cant be changed
+
+set are mutable and store unique items which means it removes the duplicates automatically
+dictionary are mutable dictionary can be assigned a value 
