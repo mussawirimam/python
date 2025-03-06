@@ -64,6 +64,41 @@ if __name__ == "__main__":
     main()
 
 
+###############
+what is happening here 
+if __name__ == "__main__":
+    main()
+
+is a common Python idiom used to control the execution of code. Let’s break it down:
+
+1. __name__:
+Every Python module (or script) has a special built-in variable called __name__.
+When you run a Python file directly (as a script), the __name__ variable is automatically set to "__main__".
+If the file is imported as a module in another script, __name__ is set to the module's name (which is usually the filename without the .py).
+2. if __name__ == "__main__"::
+This checks whether the current file is being run directly (as the main program) or is being imported into another module.
+If __name__ == "__main__", it means that the file is being run directly (not imported), so the code under this condition will execute.
+3. main():
+Typically, main() is a function defined elsewhere in the script that contains the main logic of the program.
+If the file is being run directly, this function is called to start the program.
+Purpose:
+This pattern allows you to write code that can be reused as a module, but still allows the script to be executed independently. When run as a script, the program logic (main()) will run. But if the file is imported, main() won’t be called automatically.
+
+Example:
+def main():
+    print("Hello, this is the main function!")
+
+if __name__ == "__main__":
+    main()
+If you run this file directly, the output will be:
+Hello, this is the main function!
+
+If you import this file as a module in another script, nothing will happen unless you explicitly call main() because __name__ will not be "__main__".
+Summary:
+The if __name__ == "__main__": check ensures that certain code (like calling main()) only runs when the file is executed directly, not when it is imported as a module.
+
+################
+
 ================== CONSOLE OUTPUT
 Contact Manager
 1. Add Contact
