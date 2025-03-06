@@ -193,3 +193,104 @@ CONSOLE OUTPUT:
 labex:project/ $ python test.py
 Contact x added successfully.
 {'x': {'phone': 'b', 'email': 'c'}}
+
+
+
+##################################################### FULLY EXPLAINED WITH COMMENTS 
+# Define a function to add a contact to the contacts dictionary.
+# The function takes a contacts dictionary and contact details as parameters.
+def add_contact(contacts, name, phone, email):
+    # Add or update the entry in the contacts dictionary with 'name' as the key.
+    # The value is another dictionary with keys 'phone' and 'email'.
+    contacts[name] = {"phone": phone, "email": email}
+    # Print a confirmation message indicating the contact was added.
+    print(f"Contact {name} added successfully.")
+
+# Define a function to remove a contact from the contacts dictionary.
+def remove_contact(contacts, name):
+    # Check if the contact name exists in the contacts dictionary.
+    if name in contacts:
+        # Delete the contact entry from the dictionary.
+        del contacts[name]
+        # Print a confirmation message indicating the contact was removed.
+        print(f"Contact {name} removed successfully.")
+    else:
+        # Print an error message if the contact was not found.
+        print(f"Contact {name} not found.")
+
+# Define a function to display all contacts.
+def display_contacts(contacts):
+    # Check if the contacts dictionary is not empty.
+    if contacts:
+        print("\nContact List:")
+        # Loop through each contact in the dictionary.
+        for name, info in contacts.items():
+            # Print the contact details for each entry.
+            print(f"Name: {name}, Phone: {info['phone']}, Email: {info['email']}")
+    else:
+        # Print a message if the contact list is empty.
+        print("Contact list is empty.")
+
+# Define the main function where the program's execution begins.
+def main():
+    # Create an empty dictionary to store contacts.
+    contacts = {}
+    # Create an empty set to store the names of favorite contacts.
+    favorite_contacts = set()
+
+    # Start an infinite loop that will keep the program running until the user chooses to exit.
+    while True:
+        # Display the main menu of options.
+        print("\nContact Manager")
+        print("1. Add Contact")
+        print("2. Remove Contact")
+        print("3. Display Contacts")
+        print("4. Add to Favorites")
+        print("5. Display Favorites")
+        print("6. Exit")
+
+        # Prompt the user to enter their choice.
+        choice = input("Enter your choice (1-6): ")
+
+        # Check the user's input and perform the corresponding action.
+        if choice == "1":
+            # Gather contact information from the user.
+            name = input("Enter name: ")
+            phone = input("Enter phone number: ")
+            email = input("Enter email: ")
+            # Call the add_contact function to add the new contact.
+            add_contact(contacts, name, phone, email)
+        elif choice == "2":
+            # Prompt the user for the name of the contact to remove.
+            name = input("Enter name to remove: ")
+            # Call the remove_contact function to remove the contact.
+            remove_contact(contacts, name)
+        elif choice == "3":
+            # Call the display_contacts function to show all stored contacts.
+            display_contacts(contacts)
+        elif choice == "4":
+            # Prompt the user for the contact name to add to favorites.
+            name = input("Enter name to add to favorites: ")
+            # Check if the contact exists before adding to favorites.
+            if name in contacts:
+                favorite_contacts.add(name)
+                print(f"{name} added to favorites.")
+            else:
+                print(f"Contact {name} not found.")
+        elif choice == "5":
+            # Display all contacts marked as favorites.
+            print("\nFavorite Contacts:")
+            for name in favorite_contacts:
+                print(name)
+        elif choice == "6":
+            # If the user chooses to exit, print a goodbye message and break out of the loop.
+            print("Thank you for using Contact Manager. Goodbye!")
+            break
+        else:
+            # Handle any invalid menu choices.
+            print("Invalid choice. Please try again.")
+
+# The following block checks if this file is being run as the main program.
+# If it is, then it calls the main() function to start the program.
+if __name__ == "__main__":
+    main()
