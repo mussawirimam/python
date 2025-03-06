@@ -62,3 +62,77 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+================== CONSOLE OUTPUT
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 1
+Enter name: Alice
+Enter phone number: 123-456-7890
+Enter email: alice@example.com
+Contact Alice added successfully.
+
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 1
+Enter name: Bob
+Enter phone number: 987-654-3210
+Enter email: bob@example.com
+Contact Bob added successfully.
+
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 3
+
+Contact List:
+Name: Alice, Phone: 123-456-7890, Email: alice@example.com
+Name: Bob, Phone: 987-654-3210, Email: bob@example.com
+
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 4
+Enter name to add to favorites: Alice
+Alice added to favorites.
+
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 5
+
+Favorite Contacts:
+Alice
+
+Contact Manager
+1. Add Contact
+2. Remove Contact
+3. Display Contacts
+4. Add to Favorites
+5. Display Favorites
+6. Exit
+Enter your choice (1-6): 6
+Thank you for using Contact Manager. Goodbye!
