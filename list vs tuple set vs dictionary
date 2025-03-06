@@ -3,3 +3,5 @@ tuples are immutable meaning they cant be changed
 
 set are mutable and store unique items which means it removes the duplicates automatically
 dictionary are mutable dictionary can be assigned a value 
+Yes, a Python dictionary can store and represent JSON (JavaScript Object Notation) data because JSON data is structured similarly to Python dictionaries.
+JSON objects are key-value pairs, just like dictionaries.
