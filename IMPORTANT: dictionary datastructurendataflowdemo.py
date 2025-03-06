@@ -189,3 +189,7 @@ add_contact(contacts, "jj", "2", "33")
 # Print the contacts dictionary to see the stored data
 print(contacts)
 
+CONSOLE OUTPUT:
+labex:project/ $ python test.py
+Contact x added successfully.
+{'x': {'phone': 'b', 'email': 'c'}}
