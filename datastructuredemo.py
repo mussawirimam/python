@@ -1,6 +1,6 @@
 #touch ~/project/contact_manager.py
 def add_contact(contacts, name, phone, email):
-    contacts[name] = {"phone": phone, "email": email} ### I dont understand that contacts is a variable then what is [name]
+    contacts[name] = {"phone": phone, "email": email} # contacts is a variable and [name is the dictionary] The square brackets in contacts[name] aren’t creating a list—they're used to access or assign a value in a dictionary by key. In this case, name is the key in the contacts dictionary, and using square brackets is the standard way to reference that key's value.
     print(f"Contact {name} added successfully.")
 
 def remove_contact(contacts, name):
