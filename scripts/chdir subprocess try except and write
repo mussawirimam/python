@@ -1,0 +1,25 @@
+import os
+import subprocess
+
+def dir_ch(dir):
+    try:
+        os.chdir(dir)  # Change the current working directory
+        print(f"Successfully changed directory to: {dir}")
+
+        # Run the subprocess command
+        result = subprocess.run(["echo", "hello world"], capture_output=True, text=True, shell=False)
+        print(f"Output from subprocess: {result.stdout}")
+        
+        # Writing to a file in the current directory
+        with open('spamspam.txt', 'w') as f:
+            f.write(dir)
+            print('\nThis will be written to spamspam.txt', file=f)
+            
+        print(f"File 'spamspam.txt' created and written in {dir}")
+
+    except FileNotFoundError:
+        print(f"Directory '{dir}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+dir_ch('/Users/mussawirimam/Github/Docker-kubernetes')
